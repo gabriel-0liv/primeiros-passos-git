@@ -1021,63 +1021,454 @@ git pull
 
 ---
 
-## 19. 📝 Escrevendo um bom README (Markdown)
+# 19. ENTENDENDO, CRIANDO E EDITANDO UM README
 
-O **README.md** é a "capa" do seu projeto: o primeiro arquivo que as pessoas veem no GitHub. Ele é escrito em **Markdown**, uma forma simples de formatar texto.
+O README é um dos arquivos mais importantes de um repositório no GitHub. Ele funciona como uma apresentação do projeto, permitindo que qualquer pessoa compreenda sua finalidade, seus objetivos e como utilizá-lo.
 
-### Sintaxe básica
+Nesta seção, você aprenderá o que é um README, por que ele é importante, quais informações deve conter e como criar um arquivo bem organizado utilizando Markdown.
+
+## 19.1 O que é README?
+
+README é um arquivo de documentação utilizado para apresentar informações importantes sobre um projeto.
+
+No GitHub, seu nome mais comum é `README.md`.
+
+A extensão `.md` significa Markdown, uma linguagem de marcação simples que permite organizar textos utilizando títulos, listas, links, imagens, tabelas e outros elementos de formatação.
+
+Quando um repositório possui um arquivo chamado `README.md` em sua pasta principal, o GitHub apresenta seu conteúdo automaticamente na página inicial do projeto.
+
+**Exemplo:**
+
+Imagine que você criou um repositório chamado `meu-primeiro-projeto`.
+
+Dentro dele, existe um arquivo chamado `README.md` com uma apresentação do projeto.
+
+Quando alguém acessar seu repositório, poderá visualizar essa apresentação sem precisar abrir o arquivo manualmente.
+
+## 19.2 Qual é a importância do README?
+
+O README facilita a compreensão e a utilização de um projeto, principalmente quando ele é compartilhado com outras pessoas.
+
+Suas principais funções são:
+
+- **Apresentar o projeto:** explica o que foi desenvolvido e qual é sua finalidade.
+- **Informar os objetivos:** mostra o que o projeto pretende alcançar.
+- **Orientar os usuários:** apresenta instruções para instalar, executar ou utilizar o projeto.
+- **Identificar os responsáveis:** permite conhecer os integrantes e colaboradores.
+- **Documentar tecnologias:** informa quais linguagens, ferramentas e recursos foram utilizados.
+- **Facilitar a colaboração:** ajuda novos integrantes a compreenderem a organização e o funcionamento do projeto.
+
+Um README bem elaborado demonstra organização e facilita a comunicação entre desenvolvedores.
+
+## 19.3 O que deve conter um README?
+
+Não existe um único modelo obrigatório de README. Seu conteúdo depende da finalidade e da complexidade do projeto.
+
+Entretanto, alguns elementos são bastante utilizados.
+
+### 1. Título do projeto
+
+Apresenta o nome do projeto de maneira clara.
+
+**Exemplo:**
 
 ```markdown
-# Título grande
-## Subtítulo
-### Subtítulo menor
-
-Texto normal com **negrito** e *itálico*.
-
-- Item de lista
-- Outro item
-
-1. Passo um
-2. Passo dois
-
-[Texto do link](https://exemplo.com)
-
-![Texto alternativo da imagem](caminho/da/imagem.png)
-
-`código dentro da frase`
+# Sistema de Controle de Estoque
 ```
 
-Para blocos de código, use três crases com o nome da linguagem:
+### 2. Descrição
+
+Explica resumidamente o que é o projeto e qual problema ele pretende resolver.
+
+**Exemplo:**
+
+```markdown
+Este projeto consiste em um sistema de controle de estoque
+desenvolvido em linguagem C. Seu objetivo é permitir o cadastro,
+a consulta e o gerenciamento de produtos.
+```
+
+### 3. Objetivos
+
+Apresenta as principais funcionalidades ou metas do projeto.
+
+**Exemplo:**
+
+```markdown
+- Cadastrar produtos.
+- Consultar produtos disponíveis.
+- Atualizar quantidades em estoque.
+- Identificar produtos com estoque baixo.
+```
+
+### 4. Tecnologias utilizadas
+
+Informa quais linguagens, ferramentas e tecnologias foram utilizadas no desenvolvimento.
+
+**Exemplo:**
+
+```markdown
+- Linguagem C.
+- Visual Studio Code.
+- Git.
+- GitHub.
+```
+
+### 5. Instalação e execução
+
+Explica como preparar e executar o projeto.
+
+**Exemplo:**
+
+```bash
+git clone https://github.com/usuario/controle-estoque.git
+cd controle-estoque
+gcc estoque.c -o estoque
+./estoque
+```
+
+Nesse exemplo:
+
+- `git clone` baixa o repositório.
+- `cd` acessa a pasta do projeto.
+- `gcc estoque.c -o estoque` compila o programa.
+- `./estoque` executa o programa em sistemas compatíveis com esse comando.
+
+No Windows, a execução poderá ser feita utilizando `estoque.exe`.
+
+### 6. Integrantes e colaboradores
+
+Apresenta as pessoas responsáveis pelo desenvolvimento.
+
+**Exemplo:**
+
+```markdown
+- João Silva – Programação.
+- Maria Souza – Documentação.
+- Pedro Santos – Testes.
+```
+
+### 7. Imagens e demonstrações
+
+Permite apresentar capturas de tela, diagramas ou imagens que demonstrem o funcionamento do projeto.
+
+**Exemplo:**
+
+```markdown
+![Demonstração do projeto](imagens/exemplo.png)
+```
+
+A imagem deverá estar disponível no caminho informado dentro do repositório.
+
+### 8. Licença
+
+Informa as condições de utilização, distribuição e modificação do projeto, quando houver uma licença definida.
+
+**Exemplo:** MIT License.
+
+## 19.4 Como criar um README?
+
+Existem diferentes maneiras de criar um README. Nesta cartilha, utilizaremos duas formas: diretamente pelo GitHub e pelo computador.
+
+### Método A – Criando pelo site do GitHub
+
+1. Acesse sua conta no GitHub.
+2. Entre no repositório desejado.
+3. Clique em **Add file**.
+4. Selecione **Create new file**.
+5. Digite `README.md` no campo destinado ao nome do arquivo.
+6. Escreva o conteúdo utilizando Markdown.
+7. Clique em **Preview** para visualizar a formatação.
+8. Clique em **Commit changes**.
+9. Informe uma mensagem, como `Adiciona README inicial`.
+10. Confirme a alteração.
+
+Pronto! O arquivo README estará disponível no repositório.
+
+### Método B – Criando pelo computador
+
+1. Abra a pasta do seu projeto.
+2. Crie um novo arquivo de texto.
+3. Nomeie o arquivo como `README.md`.
+4. Abra-o utilizando um editor de código, como o Visual Studio Code.
+5. Escreva o conteúdo em Markdown.
+6. Salve o arquivo.
+7. Abra o terminal dentro da pasta do projeto.
+8. Execute os seguintes comandos:
+
+```bash
+git add README.md
+git commit -m "Adiciona README inicial"
+git push
+```
+
+O arquivo será registrado no histórico do Git e enviado ao repositório remoto, desde que a conexão com o GitHub esteja configurada.
+
+## 19.5 Como formatar um README utilizando Markdown?
+
+O Markdown permite organizar o conteúdo do README sem precisar utilizar HTML ou outras linguagens mais complexas.
+
+Confira os principais recursos:
+
+### Títulos e subtítulos
+
+Utilize o símbolo `#` para criar títulos.
+
+```markdown
+# Título principal
+
+## Subtítulo
+
+### Título secundário
+```
+
+Quanto maior a quantidade de símbolos `#`, menor será o nível do título.
+
+### Negrito e itálico
+
+```markdown
+**Texto em negrito**
+
+*Texto em itálico*
+```
+
+**Resultado:**
+
+**Texto em negrito**
+
+*Texto em itálico*
+
+### Listas
+
+Para criar listas não numeradas, utilize `-` ou `*`.
+
+```markdown
+- Primeiro item
+- Segundo item
+- Terceiro item
+```
+
+Para criar listas numeradas:
+
+```markdown
+1. Primeiro passo
+2. Segundo passo
+3. Terceiro passo
+```
+
+### Links
+
+Para inserir um link, utilize a seguinte estrutura:
+
+```markdown
+[Documentação do GitHub](https://docs.github.com/pt)
+```
+
+**Resultado:**
+
+[Documentação do GitHub](https://docs.github.com/pt)
+
+### Imagens
+
+Para inserir uma imagem, utilize:
+
+```markdown
+![Descrição da imagem](imagens/exemplo.png)
+```
+
+A imagem deverá estar disponível no caminho informado dentro do repositório.
+
+### Blocos de código
+
+Para apresentar códigos, utilize três crases antes e depois do conteúdo.
+
+**Exemplo:**
 
 ````markdown
-```bash
-git status
+```c
+#include <stdio.h>
+
+int main() {
+    printf("Olá, mundo!");
+    return 0;
+}
 ```
 ````
 
-### Modelo de README
+### Tabelas
+
+As tabelas permitem organizar informações em linhas e colunas.
+
+**Exemplo:**
 
 ```markdown
-# Nome do Projeto
-
-Breve descrição do que o projeto faz.
-
-## Como instalar
-
-Passos para rodar o projeto.
-
-## Como usar
-
-Exemplos de uso.
-
-## Autor
-
-Seu nome e link do perfil.
+| Integrante | Responsabilidade |
+|---|---|
+| João | Programação |
+| Maria | Documentação |
+| Pedro | Testes |
 ```
 
-> 💡 Dica: o VS Code tem **pré-visualização de Markdown**. Abra o arquivo e aperte `Ctrl + Shift + V`.
+### Separadores
 
+Para criar uma linha horizontal entre seções:
+
+```markdown
 ---
+```
+
+Esses recursos permitem criar documentos organizados e fáceis de consultar.
+
+## 19.6 Exemplos de README para diferentes projetos
+
+Agora que você conhece os principais recursos do Markdown, veja como aplicá-los em projetos reais.
+
+### Exemplo 1 – Projeto simples de programação
+
+```markdown
+# Calculadora em C
+
+## Sobre o projeto
+
+Este projeto consiste em uma calculadora
+desenvolvida utilizando a linguagem C.
+
+## Funcionalidades
+
+- Adição.
+- Subtração.
+- Multiplicação.
+- Divisão.
+
+## Tecnologias utilizadas
+
+- Linguagem C.
+- GCC.
+- Visual Studio Code.
+
+## Como executar
+
+Compile o arquivo:
+
+gcc calculadora.c -o calculadora
+
+Execute o programa:
+
+./calculadora
+
+## Objetivo
+
+Praticar conceitos fundamentais da linguagem C.
+```
+
+### Exemplo 2 – Projeto de site
+
+```markdown
+# Meu primeiro site
+
+## Sobre o projeto
+
+Este projeto apresenta um site desenvolvido
+como atividade de aprendizagem de HTML e CSS.
+
+## Tecnologias utilizadas
+
+- HTML5.
+- CSS3.
+- JavaScript.
+
+## Funcionalidades
+
+- Página inicial.
+- Menu de navegação.
+- Layout responsivo.
+- Seção de contato.
+
+## Estrutura do projeto
+
+- index.html
+- style.css
+- script.js
+- imagens/
+
+## Objetivo
+
+Aprender a estruturar e estilizar páginas web.
+```
+
+### Exemplo 3 – Projeto acadêmico em grupo
+
+```markdown
+# Sistema de Controle de Estoque
+
+## Sobre o projeto
+
+Projeto acadêmico desenvolvido em grupo
+para praticar programação em linguagem C.
+
+## Objetivos
+
+- Cadastrar produtos.
+- Consultar produtos.
+- Atualizar o estoque.
+- Identificar produtos com estoque baixo.
+
+## Tecnologias utilizadas
+
+- Linguagem C.
+- Git.
+- GitHub.
+
+## Integrantes
+
+- Integrante 1.
+- Integrante 2.
+- Integrante 3.
+
+## Organização
+
+O projeto está organizado em arquivos
+de código-fonte e documentação.
+
+## Finalidade
+
+Aplicar conceitos de programação,
+organização de dados e trabalho colaborativo.
+```
+
+## 19.7 Boas práticas para criar um bom README
+
+Um README deve ser claro, organizado e apresentar somente informações relevantes para o projeto.
+
+Confira algumas recomendações:
+
+1. Utilize um título que identifique claramente o projeto.
+2. Explique sua finalidade logo no início.
+3. Organize o conteúdo utilizando títulos e subtítulos.
+4. Evite textos excessivamente longos ou repetitivos.
+5. Utilize exemplos para explicar funcionalidades.
+6. Mantenha as informações atualizadas.
+7. Confira se os links e imagens estão funcionando.
+8. Apresente instruções de instalação e execução quando necessário.
+9. Identifique os integrantes e colaboradores, quando aplicável.
+10. Nunca inclua senhas, tokens ou informações confidenciais.
+
+**Atenção:** um README não precisa ser extenso para ser eficiente. O mais importante é permitir que outra pessoa compreenda o projeto e saiba como utilizá-lo.
+
+### Resumo da seção
+
+| Elemento | Finalidade |
+|---|---|
+| README.md | Apresentar e documentar o projeto |
+| Markdown | Formatar e organizar o conteúdo |
+| Títulos | Separar os assuntos |
+| Listas | Organizar informações |
+| Links | Direcionar para outras páginas |
+| Imagens | Ilustrar o projeto |
+| Blocos de código | Apresentar exemplos de programação |
+| Tabelas | Organizar dados e informações |
+
+Ao concluir esta seção, você deverá ser capaz de criar, editar e organizar um README, utilizando os principais recursos do Markdown para documentar seus projetos no GitHub.
 
 ## 20. 🤝 Trabalhando em equipe: fork e pull request
 
@@ -1329,4 +1720,3 @@ Pratique, erre num repositório de teste e consulte o `git status` sempre que fi
 ---
 
 📌 *Material produzido para fins educacionais. Contribuições são bem-vindas via Pull Request!*
-Conferido - Profa. Eliane Ribeiro
