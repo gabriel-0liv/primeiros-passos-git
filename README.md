@@ -1329,3 +1329,4 @@ Pratique, erre num repositório de teste e consulte o `git status` sempre que fi
 ---
 
 📌 *Material produzido para fins educacionais. Contribuições são bem-vindas via Pull Request!*
+Conferido - Profa. Eliane Ribeiro
