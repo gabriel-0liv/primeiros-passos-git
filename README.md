@@ -8,37 +8,63 @@
 ## 📑 Sumário
 
 **Parte 1: Preparando o terreno**
+
 1. [Como usar esta cartilha](#1--como-usar-esta-cartilha)
+
 2. [O que é Git? O que é GitHub?](#2--o-que-é-git-o-que-é-github)
+
 3. [Criando sua conta no GitHub](#3--criando-sua-conta-no-github)
+
 4. [Instalando as ferramentas](#4--instalando-as-ferramentas)
+
 5. [Terminal para quem nunca viu um](#5--terminal-para-quem-nunca-viu-um)
+
 6. [Configurando o Git pela primeira vez](#6--configurando-o-git-pela-primeira-vez)
 
 **Parte 2: Git no seu computador**
+
 7. [Conceitos fundamentais](#7--conceitos-fundamentais)
+
 8. [Seu primeiro repositório](#8--seu-primeiro-repositório)
+
 9. [Ciclo básico: editar, add, commit](#9--ciclo-básico-editar-add-commit)
+
 10. [Vendo o histórico](#10--vendo-o-histórico)
+
 11. [Ignorando arquivos (.gitignore)](#11--ignorando-arquivos-gitignore)
+
 12. [Desfazendo coisas](#12--desfazendo-coisas)
+
 13. [Branches](#13--branches)
+
 14. [Merge e conflitos](#14--merge-e-conflitos)
 
 **Parte 3: GitHub (a nuvem)**
+
 15. [Fazendo login: conectando o Git à sua conta](#15--fazendo-login-conectando-o-git-à-sua-conta)
+
 16. [Criando um repositório no GitHub (pelo site)](#16--criando-um-repositório-no-github-pelo-site)
+
 17. [Enviando seu projeto local para o GitHub](#17--enviando-seu-projeto-local-para-o-github)
+
 18. [Baixando projetos: clone, pull e fetch](#18--baixando-projetos-clone-pull-e-fetch)
+
 19. [Escrevendo um bom README (Markdown)](#19--escrevendo-um-bom-readme-markdown)
+
 20. [Trabalhando em equipe: fork e pull request](#20--trabalhando-em-equipe-fork-e-pull-request)
 
 **Parte 4: Fechamento**
+
 21. [Erros comuns e como resolver](#21--erros-comuns-e-como-resolver)
+
 22. [Boas práticas](#22--boas-práticas)
+
 23. [Exercícios](#23--exercícios)
+
 24. [Cola de comandos](#24--cola-de-comandos)
+
 25. [Glossário](#25--glossário)
+
 26. [Para continuar estudando](#26--para-continuar-estudando)
 
 ---
@@ -113,14 +139,16 @@ Qual é a versão certa? O que mudou entre elas? E se duas pessoas editarem ao m
 ### Passo a passo
 
 1. Abra o navegador e acesse **<https://github.com>**.
-2. Clique em **Sign up** (Cadastre-se), no canto superior direito.
-3. Preencha:
+   <img width="1628" height="565" alt="image" src="https://github.com/user-attachments/assets/8b7776b4-1fbf-4959-90e2-793510680ecd" />
+
+3. Clique em **Sign up** (Cadastre-se), no canto superior direito.
+4. Preencha:
    - **E-mail**: use um e-mail que você acessa (vão chegar mensagens de confirmação);
    - **Senha**: forte e única (não reutilize a de outros sites);
    - **Username (nome de usuário)**: pense bem, ele aparece na URL do seu perfil (`github.com/seu-usuario`) e será visto por professores e recrutadores. Prefira algo profissional, como `joaosilva` ou `maria-souza-dev`.
-4. Resolva a verificação anti-robô (puzzle) e clique em **Create account**.
-5. O GitHub envia um **código por e-mail**. Digite-o para confirmar.
-6. Responda às perguntas iniciais (pode pular) e escolha o plano **Free** (gratuito). Ele é mais que suficiente.
+5. Resolva a verificação anti-robô (puzzle) e clique em **Create account**.
+6. O GitHub envia um **código por e-mail**. Digite-o para confirmar.
+7. Responda às perguntas iniciais (pode pular) e escolha o plano **Free** (gratuito). Ele é mais que suficiente.
 
 ### 🔐 Ative a verificação em duas etapas (2FA)
 
