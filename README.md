@@ -1,4 +1,4 @@
-# 📘 Minicurso de Git e GitHub para Iniciantes (do zero absoluto)
+# 📘 Cartilha de Git e GitHub para Iniciantes (do zero absoluto)
 
 > **Você não precisa saber nada.** Nem o que é terminal, nem o que é GitHub.
 > Esta cartilha começa criando sua conta, instalando as ferramentas e fazendo login, e termina com você colaborando em projetos de outras pessoas.
